@@ -10,10 +10,10 @@ if page == "Model" :
     # Sidebar Inputs
     st.sidebar.header("⚙️ Input Parameters")
 
-    arrival_rate = st.sidebar.number_input("Arrival Rate (λ)", min_value=0.1, max_value=12.0, value=12.0)
-    service_rate = st.sidebar.number_input("Service Rate (μ)", min_value=0.1, max_value=5.0,value=5.0)
-    doctors = st.sidebar.number_input("Number of Doctors (c)", 1, 20, 2)
-    max_doctors = st.sidebar.number_input("Max Doctors for Graph", 1, 20, 2)
+    arrival_rate = st.sidebar.number_input("Arrival Rate (λ)", min_value=0.1, max_value=20.0, value=12.0)
+    service_rate = st.sidebar.number_input("Service Rate (μ)", min_value=0.1, max_value=10.0,value=5.0)
+    doctors = st.sidebar.number_input("Number of Doctors (c)", 1, 20, 3)
+    max_doctors = st.sidebar.number_input("Max Doctors for Graph", 1, 20, 3)
 
     # Function to calculate P0
     def calculate_p0(lam, mu, c):
