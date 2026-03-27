@@ -125,4 +125,4 @@ elif page == "Explanation":
     • Improves overall service efficiency  
     """)
 
-    st.success("✅ This model uses Queueing Theory (M/M/c model).")
+    st.success("✅ We implemented an M/M/c queue model with automatic optimization to minimize waiting time.")
